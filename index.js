@@ -19,7 +19,7 @@ app.post('/whatsapp', (req, res) => {
     // Respond to the user (for testing)
     const twiml = new MessagingResponse();
     twiml.message('Your message was received!');
-    
+
     res.writeHead(200, { 'Content-Type': 'text/xml' });
     res.end(twiml.toString());
 });
